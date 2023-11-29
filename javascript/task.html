@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        body{
+            display:flex;
+            background: aqua;
+            padding:10px;
+            margin: 10px;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        /* input{
+            padding: 15px;
+            width:50vh;
+            border-radius: 10px;
+        } */ 
+        button{
+            display: flex;
+            padding: 30px;
+            margin: 30px;
+            border-radius: 15px;
+            color:rgb(182, 38, 38);
+           background: pink;
+          
+        }
+    </style>
+    <body>
+        
+        <!-- <input type="text" placeholder=""> --> 
+        <button id="h1">onclick</button>
+     
+     <script>
+       var a=['Good friends, good books, and a sleepy conscience: this is the ideal life',
+       'create innovate',
+        'Jayasri ia a good girl',
+          'Everything you can imagine is real'];
+       let btn = document.getElementById('h1')
+        btn.onclick=function dispay(){
+        var randomIndex = Math.floor(Math.random() * a.length);
+        alert(a[randomIndex]);
+       }
+       for(i=0;i<a.length;i++){
+        console.log([i])
+       }
+       
+    
+      // document.getElementById('h1').addEventListener('click',display);
+     </script>
+</body>
+</html>

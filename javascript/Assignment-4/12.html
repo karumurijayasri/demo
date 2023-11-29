@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=[12,24,36]
+        sum=0
+        avr=0
+        for(var i of a){
+            if(i%2==0 && i%3==0 && i%4==0){
+                sum+=i
+                avr++
+            }
+        }
+        console.log(sum/avr)
+    </script>
+</body>
+</html>

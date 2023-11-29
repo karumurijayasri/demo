@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        principle = 15000
+rate = 4
+time = 1
+rate = rate / (12 * 100); 
+time = time * 12; 
+emi = (principle * rate * Math.pow(1 + rate, time)) / (Math.pow(1 + rate, time) - 1);
+document.write("Emi for the " + principle + " is "  + parseInt(emi) +" rupees")
+    </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form10</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <style>
+ body{
+ display: flex;
+justify-content: center;
+ align-items: center;
+height:100vh;
+}
+section{
+      display: flex;
+     background-color: white;
+     width:1200px;
+height: 450px;
+ }
+ img{
+    margin-left: 2px;
+   margin-top: 5px;
+width:250px;
+height: 450px;
+
+}
+form{
+margin-top: 50px;
+font-family: sans-serif;
+ }
+label,input {
+    margin-left: 50px; 
+ font-family: sans-serif;
+ margin-top: 8px;
+ margin-bottom: 10px;
+ }
+#val{
+ padding: 5px;
+margin-left: 300px;
+ padding-left: 15px;
+padding-right: 15px;
+color: white;
+ background-color: green;
+}
+#value{
+ padding: 5px;
+ margin-left: 10px;
+ padding-left: 15px;
+ padding-right: 15px;
+}
+ input,select{
+     padding:5px;
+     width: 330px;
+}
+ </style>
+</head>
+<body>
+ <section>
+    <div class="img">
+<img src="../girl.jpg" >
+</div> 
+ 
+
+</div>
+<div class="form">
+<form action="">
+<label for="" style="margin-left:50px">FIRST NAME <b style="color: red;">*</b></label>
+<label for=""style="margin-left:285px">MEAL PREFERENCE</label>
+<label for="" style="margin-left:85px"><u>Lunch detail</u></label><br>
+<input type="text" placeholder="John" required style="margin-left:50px; border:2px solid green;margin-top:10px; margin-bottom:15px;">
+<select name="" id="" style="margin-left:51px; width:335px">
+<option value="Vegetarian"> Vegetarian</option>
+</select> <br>
+<label for="">LAST NAME <b style="color: red;">*</b></label>
+<label for="" style="margin-left: 290px;">PAYMENT MODE</label>
+<label for=""style="margin-left: 100px;"><u>Payment Detail</u></label> <br>
+<input type="text" required style="margin-top: 10px; margin-bottom:15px;border:2px solid red;">
+<i class="fa-solid fa-circle-exclamation" style="color: red;margin-left:-25px;"></i>
+
+<input type="radio" name="payment" id="payment" style="margin-left: -100px;" >
+<label for="payment" style="margin-left: -160px;" >Cash</label>
+<input type="radio" name="payment" id="payment" style="margin-left: -140px;"  >
+<label for="payment" style="margin-left: -160px;" >Cheque</label>
+<input type="radio" name="payment" id="payment" style="margin-left: -140px;"  >
+<label for="payment"  style="margin-left: -160px;" >Demand Draf</label> <br>
+
+<!-- <input type="range" id="rangeInput" name="range" min="0" max="100"> -->
+<br>
+<label for="" style="margin-left:50px" >COMPANY <b style="color: red;">*</b></label>
+<label for="" style="margin-left: 300px;">DD/CHEQUE NO.</label><br>
+<input type="text" style="margin-left:50px">
+<input type="text"><br>
+<label for="" style="margin-left:50px">EMAIL<b style="color: red;">*</b></label>
+<label for="" style="margin-left: 335px;">DRAWN ON(BANK NAME)</label><br>
+<input type="text">
+<input type="text"><br>
+<label for="" style="margin-left:50px">PHONE NUMBER <b style="color: red;">*</b></label>
+<label for="" style="margin-left:250px;">PAYABLEAT</label><br>
+<input type="text">
+<input type="text"><br>
+<label for="">-DONATE US</label><br>
+<input type="radio" style="border:5px solid green; border-top: none; border-left: none;border-right: none;"><br>
+<button id="value" style="margin-left: 580px; background-color: green;color: white; margin-top: 15px;">SUBMIT</button>
+<button id="value" style="margin-left: 30px;">RESET</button>
+ 
+</form>
+</div>
+</section>
+</body>
+</html>

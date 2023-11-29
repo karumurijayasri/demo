@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     * {
+            margin: 0;
+            padding: 0;
+        }
+
+    section{
+        display: grid;
+        justify-content: center;
+            align-content: center;
+            grid-template-columns:  1fr 2fr ;
+            padding: 100px 40px;
+            margin-top:60px;
+            margin-left: 200px;
+    }
+    input,textarea{
+        padding: 6px;
+    margin-top: 10px;
+    background-color: rgb(232, 227, 227);
+    width: 400px;
+    border: none;
+    color: rgb(84, 83, 83);
+    margin-left: 50px;
+    }
+    p{
+        margin-top: 20px;
+    }
+    img{
+        margin-top: 20px;
+    }
+    button{
+        margin-left: 50px;
+        margin-top: 10px;
+        height: 50px;
+        width: 130px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 5px;
+
+    }
+</style>
+<body>
+    <section>
+        <div class="left">
+            <h1>Let's talk about <br>everything!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, iste, dolore optio volupt?</p>
+            <img src="https://emailanalytics.com/wp-content/uploads/2020/07/Perfect-Email-Address-Ideas.jpg" style="width: 400px; height: 290px;" alt="">
+        </div>
+        <div class="right">
+            <input type="text" placeholder="Your name" ><br>
+            <input type="email" placeholder="Email" style="margin-top: 10px;"><br>
+            <input type="text" placeholder="Subject" style="margin-top: 10px;"><br>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Write your message"></textarea><br>
+            <button>Send Message</button>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* var a=25
+        if(a%5==0){
+            document.write(a+  ' is divisible by 5')
+        }else{
+            document.write(a+ ' is not divisible by 5 ')
+        } */
+       /* var a=12
+        if(a%2==0 && a%3==0 && a%4==0){
+            document.write(a+ 'is divisible by 2,3,4')
+        }else{
+            document.write(a+ 'is not divisible by 2,3,4')
+        } */
+
+       /* for(i=1;i<=100;i++){
+            if(i%3==0 && i%5==0){
+                document.write('fizz &buzz' + ' ')
+            }else if(i%3==0){
+                document.write('fizz' +  ' ')
+            }else if(i%5==0){
+                document.write('buzz' + ' ')
+            }
+        }*/
+
+        var start=parseInt(prompt('enter start value'))
+        var end=parseInt(prompt('enter end value'))
+
+        for(number = start;number<=end; number++){
+        
+            if(number%3==0 && number%5==0){
+                document.write('fizz&buzz' +' ')
+            } else if(number%3==0 ){
+                document.write('fizz' +' ')
+            }else if(number%5==0){
+               document.write('buzz' + ' ')
+            }else{
+               document.write(number +' ')
+            }
+        } 
+          
+           
+             
+    </script>
+</body>
+</html>

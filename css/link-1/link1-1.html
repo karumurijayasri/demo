@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+    body{
+        background:linear-gradient(rgb(146, 27, 146),rgb(193, 44, 101));
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    section{
+        background-color: white;
+        width: 650px;
+        height:700px;
+        display:flex;
+    }
+    input[type=text], input[type=password] {
+  width:250px;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  position: relative;
+  
+    }
+    h2{
+        padding:5px;
+        color: grey;
+    }
+    div{
+        padding:10px;
+    }
+    .first{
+        display: flex;
+        flex-direction: row;
+        position:relative;
+        top:20px;
+    }
+    .second{
+        display:flex;
+        flex-direction: row;
+        position:absolute;
+        top:360px;
+    }
+    .last{
+        display:flex;
+        flex-direction: row;
+    }
+    .gender{
+        display:flex;
+        flex-direction:row;
+    }
+    .last1{
+        display:flex;
+        flex-direction:row;
+    }.subject{
+        position:relative;
+        left:15px;
+        top:-5px;
+    }
+    
+    button{
+        padding:25px;
+        margin: 5px;
+        font-size: 20px;
+        color: rgb(244, 244, 247);
+        background-color: rgb(138, 138, 202);
+        border-radius: 20px;
+        width: 150px;
+    }
+    #ss{
+        position:absolute;
+        top:45px;
+        left:250px;
+    }
+    .subject{
+        position:relative;
+        top:35px;
+    }
+    
+    
+    </style>
+    <section>
+        <div class="divform">
+            <form action="">
+                <h2>Registration Form</h2>
+          <div> 
+            <div class="first">
+    <div class="fullname"><label for="First Name">FirstName</label><br>
+    <input type="text" placeholder="Johnny"  required></div>
+    <div class="lastname"><label for="Last Name">Last Name</label><br>
+    <input type="text" placeholder="Neison"  required></div>
+    <br>
+            </div>
+    <div class="last">
+        <div class="bithday"><label for="">Birthday</label>
+    <br>
+    <input type="text" name="" id=""></div>
+
+    <div class="last1">
+        <div class="gender"><p>Gender</p>
+            <div class="last2">
+            <div class="m"><input type="radio" name="gender" id="">
+                <label for="">Male</label></div>
+                <div class="f"><input type="radio" name="gender" id="">
+                    <label for="">Female</label></div>
+            </div>
+    </div></div>
+    </div>
+
+    <div class="second">
+    <div class="email"><label for="">Email</label>
+    <br>
+    <input type="text" name="" id=""></div>
+    <div class="phone"><label for="">Phone Number</label><br>
+    <input type="text" name="" id=""></div>
+    <br></div>
+    <div class="subject"><label for="">Subject</label>
+    <br>
+    <input type="text" placeholder="choose option"><span><select name="" id="ss"></span></select><br>
+    <button type="submit">Submit</button><br>
+</div> 
+
+            </form>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // 1.object literal
+    // var a={
+    //     name:'xyz',course:'fs',age:20,location:'hyd'
+    // }
+    // a['age']=25
+    // a.name='abc'
+    // console.log(a.name,a.age)
+
+    // console.log(a['course'])
+
+  // 2
+    //    var a= new Object()
+    //    a.name='xyz'
+    //    a.location='hyd'
+    //    a.age=23
+    //    a.name='jaya'
+    //    console.log(a)
+    // 3
+
+//     function name(n,a){
+//         this.name=n
+//         this.age=a
+//     }
+//    var a=new name('xyz',25)
+//    var b=new name('wxyz',26)
+
+//    console.log(a.age,b.age)
+
+// 5 
+
+// class name{
+//     constructor(n,a,c){
+//         this.name=n
+//     }
+// }
+// var a=new name('jaya')
+// console.log(a)
+
+//5
+//  var a=new Object('jaya')
+// var b=Object.create(a,{
+//     location:{
+//         value:'hyd'
+//     },age:{
+//         value:25
+//     }
+        
+// })
+// b.name='jaya'
+// console.log(b)
+// var a={
+//     name:'jaya',age:23
+// }
+// var a=new Object()
+// a.name='jaya'
+// a.age=25
+// console.log(a.age)
+// function name(){
+//     this.name='jaya'
+// }
+// var a=new name()
+// console.log(a)
+class car{
+    constructor(n,a,c){
+    this.name=n
+    this.color=a
+    this.maker=c
+}
+}
+var a= new car('jaya','red','bmw')
+console.log(a)
+
+
+</script>
+</body>
+</html>

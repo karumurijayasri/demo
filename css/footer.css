@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    grid-auto-flow: column;
+    grid-template-rows: auto;
+    background-color:dimgray;
+    height:400px;
+    padding-top:30px;
+    position:absolute;
+    left:170px;
+    top: 100px;
+    color:white;
+    line-height:3;
+
+
+}
+.copyright{
+    position: absolute;
+    bottom:160px;
+    left:170px;
+    background-color:grey;
+    color: white;
+    width:1171px;
+    height:100px;
+    text-align: center;
+    padding-top: 20px;
+}
+input[type=submit] {
+    width:150px;
+    background-color:rgb(243, 33, 33);
+    color: white;
+    padding: 6px 20px;
+    margin: 6px 0;
+    border:5px;
+    border-color: white;
+    border-radius:5px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #ec3f3f;
+  }
+  input[type=email], select {
+    width:350px;
+    padding:6px 3px;
+    margin: 8px 4px;
+    display: inline-block;
+    border: 1px white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color:white;
+  }
+  map{
+    width:50px;
+    height:300px;
+  }

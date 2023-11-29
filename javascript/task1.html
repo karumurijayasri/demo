@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100vh;
+            
+        }
+        input{
+            padding: 20px;
+        }
+        select{
+            padding: 15px;
+            background-color:blanchedalmond;
+            
+        }
+    </style> 
+
+    <label for=""></label>
+    <div>
+    <input type="text" name="in1" id="Input" oninput="convertion()"> <br>
+    
+    <select name="" id="">
+      <option value="">inches</option>
+        <option value="">Kilometers</option>
+        <option value="">Millimeters</option>
+        <option value="">Feet</option>
+        <option value="">Centimeters</option>
+        <option value="">yards</option>
+        <option value="">meters</option>
+      </select>
+    </div>
+      <div>
+      <label for=""></label>
+      <input type="text" name="in2" id="Output" ><br>
+      <select name="" id="">
+        <option value="">miles</option>
+          <option value="">Kilometers</option>
+          <option value="">Millimeters</option>
+          <option value="">Feet</option>
+          <option value="">Centimeters</option>
+          <option value="">yards</option>
+          <option value="">meters</option>
+        </select>
+    </div>
+    <script>
+
+
+        let inn1 = document.getElementsByClassName('in1')[0]
+        let inn2 = document.getElementsByClassName('in2')[0]
+        let sel1 = document.getElementsByClassName('sel1')[0]
+        let sel2 = document.getElementsByClassName('sel2')[0]
+        
+        
+        inn1.onkeypress = function () {
+            switch (sel1.value) {
+                case 'meter':
+                    switch (sel2.value) {
+                        case 'centimeter':
+                            inn2.value = inn1.value * 100;
+                            break;
+                        case 'kilometer':
+                            inn2.value = inn1.value / 1000;
+                            break;
+                        case 'foot':
+                            inn2.value = inn1.value * 3.281;
+                            break;
+                        case 'inch':
+                            inn2.value = inn1.value * 39.37;
+                            break;
+                        default:
+                            inn2.value = inn1.value;
+                            break;
+                    }
+                    break;
+                case 'centimeter':
+                    switch (sel2.value) {
+                        case 'meter':
+                            inn2.value = inn1.value / 100;
+                            break;
+                        case 'kilometer':
+                            inn2.value = inn1.value / 100000;
+                            break;
+                        case 'foot':
+                            inn2.value = inn1.value / 30.48;
+                            break;
+                        case 'inch':
+                            inn2.value = inn1.value / 2.54;
+                            break;
+                        default:
+                            inn2.value = inn1.value;
+                            break;
+                         }
+                    break;
+                case 'kilometer':
+                    switch (sel2.value) {
+                        case 'meter':
+                            inn2.value = inn1.value * 1000;
+                            break;
+                        case 'centimeter':
+                            inn2.value = inn1.value * 100000;
+                            break;
+                        case 'foot':
+                            inn2.value = inn1.value * 3281;
+                            break;
+                        case 'inch':
+                            inn2.value = inn1.value * 39370;
+                            break;
+                        default:
+                            inn2.value = inn1.value;
+                            break;
+                    }
+                    break;
+                case 'foot':
+                    switch (sel2.value) {
+                        case 'meter':
+                            inn2.value = inn1.value / 3.281;
+                            break;
+                        case 'centimeter':
+                            inn2.value = inn1.value * 30.48;
+                            break;
+                        case 'kilometer':
+                            inn2.value = inn1.value / 3281;
+                            break;
+                        case 'inch':
+                            inn2.value = inn1.value * 12;
+                            break;
+                        default:
+                            inn2.value = inn1.value;
+                            break;
+                    }
+                    break;
+                case 'inch':
+                    switch (sel2.value) {
+                        case 'meter':
+                            inn2.value = inn1.value / 39.37;
+                            break;
+                        case 'centimeter':
+                            inn2.value = inn1.value * 2.54;
+                            break;
+                        case 'kilometer':
+                            inn2.value = inn1.value / 39370;
+                            break;
+                        case 'foot':
+                            inn2.value = inn1.value / 12;
+                            break;
+                        default:
+                            inn2.value = inn1.value;
+                            break;
+                    }
+                    break;
+                default:
+                    inn2.value = inn1.value;
+                    break;
+            }
+        }
+     </script>
+            
+
+
+</body>
+</html>

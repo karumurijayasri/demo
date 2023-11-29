@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <style>
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            background-color: rgb(150, 182, 182);
+            padding: 30px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        section {
+            width: 800px;
+            height: 150vh;
+            background: #fff;
+            padding: 70px 80px;
+        }
+
+        table,
+        th,
+        td,
+        tr {
+            border: 1px solid;
+            border-collapse: collapse;
+            margin-top: 20px;
+            text-align: left;
+        }
+        td,
+        th {
+            padding: 10px 20px;
+        }
+        .form-item{
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+        .dob{
+            width: 30px;
+            margin-left: 38px;
+            margin-right: -42px;
+            outline: none;
+        }
+        span{
+            
+            padding-top: 50px;
+            margin: 20px;
+        }
+        input{
+            margin-top: 15px;
+        }
+        .form-item .input-name{
+            position: relative;
+            top: 30px;
+            left: -110px;
+            padding-right: 100px;
+            margin-bottom: 20px;
+        }
+    </style>
+    <div class="container">
+        <section>
+            <h1 style="text-align: center; font-size:40px;color:rgb(40, 40, 98)">Student Registration Form</h1>
+            <p>Name of the Applicant:</p>
+            <div class="form-item">
+                <p>First Name</p>
+                <input type="text" style="padding:0" height="21px" width="100%"  class="input-name"><br>
+                <p>Last Name</p>
+                <input type="text" width="100%" class="input-name"><br>
+            </div>
+            <span>Date of Birth:</span>
+            <input type="text" placeholder="MM" class="dob month">
+            <input type="text" placeholder="DD" class="dob date">
+            <input type="text" placeholder="YY"  class="dob year"><br>
+            <span>Gender:</span>
+            <input type="checkbox">
+            <span>Male</span>
+            <input type="checkbox">
+            <span>Female</span><br>
+            <span>Grade:</span>
+            <input type="text" style="margin-left: 82px;"><br>
+            <span>Languages Spoken:</span>
+            <input type="text" style="width: 81%;"><br>
+            <span>Details of Siblings:</span><br>
+            <input type="text" placeholder="1" style="width: 97%; padding-top:30px"><br>
+            <span>Parent's Information:</span>
+            <table>
+                <tr>
+                    <th>Father's Name</th>
+                    <td style="width:70%"></td>
+                </tr>
+                <tr>
+                    <th>Father's Qualification</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Father's Email & Phone No.</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Father's Occupation</th>
+                    <td></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>Mother's Name</th>
+                    <td style="width:69%"></td>
+                </tr>
+                <tr>
+                    <th>Mother's Qualification</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Mother's Email & Phone No.</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Mother's Occupation</th>
+                    <td></td>
+                </tr>
+            </table>
+            <span>Address:</span><br>
+            <table style="width: 97%;">
+                <tr style="background-color: rgb(40, 40, 98);color:#fff;text-align:left">
+                    <th colspan="2">Residential Address</th>
+                </tr>
+                <tr>
+                    <td height="30px"></td>
+                </tr>
+            </table>
+            <span>Payment Details</span>
+            <input type="checkbox">
+            <span>Cash</span>
+            <input type="checkbox">
+            <span>Check</span>
+            <input type="checkbox">
+            <span>Card</span>
+            <table style="width: 97%;">
+                <tr style="background-color: rgb(40, 40, 98);color:#fff;text-align:left">
+                    <th colspan="2">Terms and Conditions</th>
+                </tr>
+                <tr>
+                    <td height="30px">
+                        1.I/we certify that the above information provided by me/us is correct. <br>
+                        2.I undertake to submit all the documents in original for verification.
+                    </td>
+                </tr>
+            </table>
+            <p style="text-align: right; margin-right: 50px; margin-top:30px">Signature and Date</p>
+        </section>
+    </div>
+</body>
+
+</html>

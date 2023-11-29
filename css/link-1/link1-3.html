@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        section{
+            background-color: white;
+            height: 550px;
+            width: 500px;
+            
+        }
+        img{
+            width:500px;
+            height:150px ;
+        }
+        .div1{
+            padding:40px
+        }
+        h3{
+            color: rgb(66, 65, 65);
+        }
+        input,select{
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom:1px solid gray ;
+            margin-top: 30px;
+            width: 400px;
+        }
+        .div2{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        button{
+            padding: 10px;
+            margin-left: 20px;
+            width: 80px;
+            margin-top: 30px;
+            color: white;
+            background-color: green;
+            border: none;
+
+        }
+    </style>
+    <section>
+    <div>
+        <img src="../image.jpg" alt="">
+    </div>
+    <div class="div1">
+        <h3>Registration Info</h3>
+        <form action="">
+            <input type="text" placeholder="NAME"><br>
+           <div class="div2">
+            <input type="text" placeholder="BIRTHDAY">
+            <select name="" id="">
+            <option value="" selected disabled hidden>GENDER</option>
+            <option value="">female</option>
+            <option value="">Male</option>
+        </select>
+    </div>
+        <select name="" id="">
+            <option value=""selected disable hidden>CLASS</option>
+
+        </select>
+        <input type="text" placeholder="REGISTRATION CODE">
+        </form>
+        <button>submit</button>
+    </div>
+   
+</section>
+</body>
+</html>

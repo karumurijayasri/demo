@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        section{
+             display: flex;
+           /* flex-direction:row;
+            flex-wrap: wrap;*/
+            flex-flow: row wrap;
+            justify-content:center;
+            /*align-items: center;*/
+            align-content: space-evenly;
+             gap:20px;
+            height: 100vh;
+        }
+        div{
+            width: 300px;
+            height: 100px;
+            color: blueviolet;
+            font-size: 30px;
+        }
+        div:nth-child(odd){
+            background-color: aqua;
+        }
+        div:nth-child(even){
+            background-color: coral;
+        }
+    </style>
+    <section>
+        <div class="div1">div1</div>
+        <div class="div2">div2</div>
+        <div class="div3">div3</div>
+        <div class="div4">div4</div>
+        <div class="div5">div5</div>
+        <div class="div6">div6</div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: azure;
+            display: flex;
+            justify-content: center;
+        }
+        section{
+            width: 650px;
+            height: 990px;
+            background-color: white;
+        }
+        .parent{
+            width: 650px;
+            display: grid;
+            grid-template-columns: 300px auto;
+            grid-template-rows:150px;
+        
+        }
+        .img{
+            
+            width: 300px;
+            height: 100px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .address{
+            width: 300px;
+            height: 100px;   
+            padding-top: 20px;
+            margin-left: 50px;
+        }
+        .head{
+            width: 520px;
+            height: 100px;
+            margin-left: 50px;
+            
+        }
+        hr{
+          width: 600px;
+            border-color:  rgb(5, 250, 188);
+        }
+        .form{
+        margin-left: 25px;
+        }
+        input{
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+    <div class="parent">
+        <div class="img">
+            <img src="../image.jpg" width="300px" height="150px">
+        </div>
+        <div class="address">
+            <p>Church Name</p>
+            <h4>Vaction Bible School 2019</h4>
+            <p>July 21-24,2019 &#124; 8A.m,-1:30 p.m. </p>
+            <p>For: Childrens 4years old through Grade 6</p>
+        </div>
+        <div class="head">
+           <h1 style="color:rgb(80, 80, 238);text-align:center;font-size:30px">STUDENT REGISTRATION FORM</h1>
+           <p style="font-size:15px; text-align:center;">Direact contact:Samantha Jones.(555)222-1234 or samantha@firstanychurch.org</p>
+        </div>
+    </div>
+    <hr size="3" noshade>
+   <p style="text-align: center;">(please print)</p>
+   <div class="form">
+   <label>Child's Name</label>
+   <input type="text" style="width: 460px;font-size:10px;border-left:none;border-right:none;border-top:none; "><br>
+   <label>Child's Age</label>
+   <input type="text" style="width: 80px;font-size:10px;border-left:none;border-right:none;border-top:none; ">
+   <label>Child's Birth Date</label>
+   <input type="text" style="width: 80px;font-size:10px;border-left:none;border-right:none;border-top:none; ">
+   <label>Child's Grade</label>
+   <input type="text" style="width: 85px;font-size:10px;border-left:none;border-right:none;border-top:none; "><br>
+   <label>parent/Guardian Name(s)</label>
+   <input type="text" style="width: 385px;font-size:10px;border-left:none;border-right:none;border-top:none; "><br>
+   <label>Home Phone</label>
+   <input type="text" style="width: 110px;font-size:10px;border-left:none;border-right:none;border-top:none; ">
+   <label>Work Phone</label>
+   <input type="text" style="width: 110px;font-size:10px;border-left:none;border-right:none;border-top:none; ">
+   <label>Mobile</label>
+   <input type="text" style="width: 95px;font-size:10px;border-left:none;border-right:none;border-top:none; "><br>
+   <label>Email</label>
+   <input type="text" style="width: 160px;font-size:10px;border-left:none;border-right:none;border-top:none; ">
+   <label>Prefered Contact Method</label>
+   <input type="text" style="width: 180px;font-size:10px;border-left:none;border-right:none;border-top:none; "><br><br>
+   <p style="font-size: 15px;font-weight:bold">EMERGENCY INFORMATION</p>
+   <hr size="3" noshade style="width: 380px;position:relative;left:93px;top:-26px;">
+   <label>Emergency Contact 1</label>
+   <input type="text" style="width: 190px;font-size:10px;border-left:none;border-right:none;border-top:none; ">
+   <label>Phone</label>
+   <input type="text" style="width: 190px;font-size:10px;border-left:none;border-right:none;border-top:none; "><br>
+   <label>Emergency Contact 2</label>
+   <input type="text" style="width: 190px;font-size:10px;border-left:none;border-right:none;border-top:none; ">
+   <label>Phone</label>
+   <input type="text" style="width: 190px;font-size:10px;border-left:none;border-right:none;border-top:none; "><br>
+   <label>Doctor</label>
+   <input type="text" style="width: 282px;font-size:10px;border-left:none;border-right:none;border-top:none; ">
+   <label>Phone</label>
+   <input type="text" style="width: 190px;font-size:10px;border-left:none;border-right:none;border-top:none; "><br>
+   <label>Allergies or Special Needs</label>
+   <input type="text" style="width: 400px;font-size:10px;border-left:none;border-right:none;border-top:none; "><br><br>
+   <p style="font-size: 15px;font-weight:bold">DISMISSAL</p>
+   <hr size="3" noshade style="width: 510px;position:relative;left:30px;top:-26px;">
+   <p>Who may pick up your child at the end of each VBS day$</p>
+   <label>Name</label>
+   <input type="text" style="width: 225px;font-size:10px;border-left:none;border-right:none;border-top:none; ">
+   <label>Relationship</label>
+   <input type="text" style="width: 225px;font-size:10px;border-left:none;border-right:none;border-top:none; "><br>
+   <label>Name</label>
+   <input type="text" style="width: 225px;font-size:10px;border-left:none;border-right:none;border-top:none; ">
+   <label>Relationship</label>
+   <input type="text" style="width: 225px;font-size:10px;border-left:none;border-right:none;border-top:none; "><br><br><Br>
+
+    <label>Parent/Guardian Signature</label>
+    <input type="text" style="width: 280px;font-size:10px;border-left:none;border-right:none;border-top:none; ">
+    <label>Date</label>
+    <input type="text" style="width: 80px;font-size:10px;border-left:none;border-right:none;border-top:none; "><br><br>
+    <p style="color: rgb(5, 250, 188);text-align:center;font-weight:bold;font-size:13px;">First Any Church &#x2B24;123 Church st. &#x2B24; anytown,USA &#x2B24; (555)222-1234c &#x2B24; firstAnyChurch.org</p>
+
+
+</div>
+</section> 
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: black;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            height: 100vh;
+            
+        }
+        section{
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            height:400px ;
+            width: 700px;
+            
+        }
+        img{
+            height:400px ;
+            width:300px ;
+        }
+        form{
+            padding: 30px;
+            
+        }
+        input,select{
+            margin-top: 20px;
+       
+            border-bottom: 2px solid gray ;
+            border-left: none;
+            border-top: none;
+            border-right: none;
+            width: 250px;
+        }
+        .div2{
+            display: flex;
+            flex-direction: row;
+            width: 250px;
+            margin-right: 40px;
+            gap: 10px;
+            
+        }
+       button{
+        margin-top: 20px;
+        border:none;
+        background-color:wheat;
+        padding: 15px;
+        justify-content: center;
+        display: flex;
+        border-radius: 10px;
+       }
+
+    </style>
+    <section>
+        <div>
+            <img src="../back girl.jpg" alt="">
+        </div>
+        <div class="form">
+            
+            <form action="">
+                <h3>REGISTRATION FORM</h3>
+                <div>
+              <div class="div2">
+                <input type="text"  >
+                <input type="text" placeholder="Last Name">
+            </div>
+        </div>
+            
+                <input type="text" placeholder="Username">
+                <input type="email" placeholder="Email Address"><br>
+                <select name="" id="">
+                    <option value=""  selected disabled hidden>Gender</option>
+                </select><br>
+                <input type="text" placeholder="Password">
+                <input type="text" placeholder="confirm Password">
+                <button>Register </button>
+            </form>
+        </div>
+        </section>
+    </body>
+    </html>

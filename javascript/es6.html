@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // rest operator
+        // function a(a,b,...rest){
+        //     console.log(rest)
+
+        //     sum=0
+        //     for(i of rest){
+        //         sum+=i
+        //     }
+            
+        //     console.log(a+b+sum)
+        // }
+    
+        // a(1,2,3,4,5,6,7,8,9,10)
+
+       // spread operator
+
+        // var a=[1,2,3,4,5,6,7]
+        // var b=[8,9,10,11]
+        // var c=[...a,...b]
+        // console.log(c)
+        var a={
+            name:'xyz',
+            age:'23',
+            address:{
+                permanent:'value',
+                temporary:'value'
+            },
+            course:'FS',
+            institute:'sp',
+            area:'kphb',
+            mobile:'123'
+        }
+        const{permanent}=a.address
+        console.log(permanent)
+        
+    </script>
+</body>
+</html>

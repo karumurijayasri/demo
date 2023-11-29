@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: rgb(65, 159, 65);
+            display: flex;
+            height:100vh;
+            justify-content: center;
+            align-items: center;    
+        }
+        section{
+            background-color: white;
+            width:500px;
+            height: 300px;
+            display: flex;
+        }
+        
+
+input[type=text], input[type=password] {
+  width:350px;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  position: relative;
+  top:20px;
+  left:60px;
+  
+  
+}
+button{
+    width:375px;
+    height:50px;
+    position:relative;
+    left:60px;
+    top:10px;
+    border-color:white;
+    background-color: green;
+    color: white;
+}
+.footer{
+    position:relative;
+    top:10px;
+    left:70px;
+}     
+    </style>
+    <section>
+        <div class="form">
+        <form action="">
+            <div id="username">
+                <label  for="username"></label>
+            <input type="text"  placeholder="username">
+            </div>
+            
+            <div class="password">
+                <label for="password"></label>
+            <input type="text"  placeholder="password">
+            </div>
+            <button>login</button>
+            <div class="footer">
+            
+           <h4>Not registered?<span style="color:green;">create an account</span></h4></div>
+            </div>
+
+        </form>
+    </div>
+    </section>
+</body>
+</html>

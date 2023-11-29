@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class bank{
+            constructor(account_name,account_no,mobile){
+                var name=account_name
+                var account_no=account_no
+                var mobile=mobile
+
+                this.setname=(names)=>{
+                    name=names
+                }
+                this.getname=()=>{
+                    console.log(name)
+                }
+                this.setmobilename=(mobile)=>{
+                    mobile=mobiles
+                }
+                this.getmobile=()=>{
+                    console.log(mobile)
+                }
+                this.setaccount_no=()=>{
+                    account_no=Math.floor(Math.random()*800000000)
+                }
+                this.getaccount_no=()=>{
+                    console.log(account_no)
+                }
+            }
+
+        }
+
+        var a=new bank('xyx',null,123456789)
+        a.getaccount_no()
+        a.setaccount_no()
+        console.log(a)
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        input:optional{
+            border-color: pink;
+        }
+        input:read-only{
+            background-color: aqua;
+        }
+        input:read-write{
+            background-color: blue;
+        }
+        input:required{
+            background-color: chartreuse;
+        }
+        
+      :root{
+        background:conic-gradient(pink,green,aqua,red);
+        color: blanchedalmond;
+        --darked:#4e0707;
+        --blue:#1520a6;
+      }
+      :target{
+        color:blue;
+        font-size: 20px;
+      }
+
+      p::before{
+        content: Jaya;
+        color:yellow;
+      }
+      p::first-letter{
+                   background-color: #4e0707;
+                   font-size: 20px;
+                   font-weight: 800;
+      }
+      ::selection{
+        background-color: aquamarine;
+
+      }
+      ::placeholder{
+        color:palevioletred
+      }
+
+
+    </style>
+    <input type="text" placeholder="Jayasri">
+    <input type="text" required>
+
+
+    <a href="#para1">para 1</a>
+    <a href="#para2">para 2</a>
+    <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, modi magni! Velit reiciendis vel veritatis obcaecati quod. Maxime, eligendi tempora quisquam, excepturi commodi voluptatem repellat similique ea enim, laboriosam quo.</p>
+    <p id="para2">This is para2 jaya</p>
+
+    
+</body>
+</html>

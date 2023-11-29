@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+       
+</head>
+<style>
+    div{
+        font-size: 50px;
+    }
+    div:nth-child(odd){
+        background-color: pink;
+    }
+    div:nth-child(even){
+        background-color: aqua;
+    }
+    section{
+        display: grid;
+       grid-template-columns: auto auto auto;
+       grid-template-rows: 100px 100px 100px;
+        grid-template-areas: 'header header header'
+                              'navigation navigation navigation'
+                               'aside section asid'
+                               'aside article asid'
+                               'footer footer footer';
+         grid-gap:1rem;
+    }                           
+.div1{
+    grid-area: header;
+    
+}
+.div2{
+    grid-area: navigation;
+}
+.div3{
+    grid-area: aside;
+}
+.div4{
+    grid-area: 1/2/5/3; /*row start/column start/ rowend/columnend*/
+}
+.div5{
+    grid-area: article;
+}
+.div6{
+    grid-area: asid;
+}
+.div7{
+    grid-area: footer;
+}
+</style>
+<body>
+    <section>
+        <div class="div1">header</div>
+        <div class="div2">navigate</div>
+        <div class="div3">aside</div>
+        <div class="div4">section</div>
+        <div class="div5">article</div>
+        <div class="div6">aside</div>
+        <div class="div7">footer</div>
+    </section>
+    
+</body>
+
+</html>

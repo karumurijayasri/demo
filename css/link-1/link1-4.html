@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        section{
+            background-color: white;
+            height: 500px;
+            width: 550px;
+            display:flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            
+        }
+        img{
+            width:200px;
+            height:500px ;
+        }
+        
+        .div1{
+           
+            color: white;
+            width: 300px;
+            padding: 30px;
+            height: 500px;
+        }
+        h3{
+            color: rgb(66, 65, 65);
+        }
+        input,select{
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom:1px solid gray ;
+            margin-top: 30px;
+            width: 250px;
+        }
+        button{
+           background-color:rgb(43, 230, 43);
+            width:80px;
+            margin-top: 20px;
+    
+        }
+    </style>
+    <section>
+    <div>
+        <img src="../image.jpg" alt="">
+    </div>
+    <div class="div1">
+        <h3>Registration Info</h3>
+        <form action="">
+            <input type="text" placeholder="NAME"><br>
+            
+            <input type="text" placeholder="Birthdate">
+            <select name="" id="">
+            <option value="" selected disabled hidden>GENDER</option>
+            <option value="">female</option>
+            <option value="">Male</option>
+        </select><br>
+ 
+        <select name="" id="">
+            <option value=""selected disable hidden>CLASS</option>
+
+        </select><br>
+        <input type="text" placeholder="Registration CODE">
+        <br>
+        <button type="submit">Submit</button>
+        </form>
+    </div>
+</section>
+</body>
+</html>
